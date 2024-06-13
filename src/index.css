@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Antd Modal */
+:where(.css-dev-only-do-not-override-1m62vyb).ant-modal .ant-modal-content {
+    padding: 0 !important;
+}
+/* Hide Scrolbar */
+.scrollbar-hidden::-webkit-scrollbar {
+    width: 5px; /* Adjust this value to match your design */
+    background-color: transparent; /* Change this to the background color of your container */
+}
+
+.scrollbar-hidden::-webkit-scrollbar-thumb {
+    background-color: transparent; /* This will hide the scrollbar thumb */
+}
+
+/* For Firefox */
+.scrollbar-hidden {
+    scrollbar-width: thin;
+}
+
+.scrollbar-hidden::-moz-scrollbar-thumb {
+    background-color: transparent; /* This will hide the scrollbar thumb in Firefox */
+}
